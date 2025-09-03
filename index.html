@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Lil Pimp</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Background image -->
+  <img id="bg" alt=""/>
+
+  <!-- QR overlay -->
+  <img id="qr" alt="QR"/>
+
+  <!-- File pickers (hidden) -->
+  <input type="file" id="bgInput" accept="image/*"/>
+  <input type="file" id="qrInput" accept="image/*"/>
+
+  <!-- Upload buttons -->
+  <div id="controls">
+    <button onclick="document.getElementById('bgInput').click()">
+      Change Background
+    </button>
+    <button onclick="document.getElementById('qrInput').click()">
+      Change QR
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
